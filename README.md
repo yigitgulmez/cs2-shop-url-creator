@@ -1,13 +1,13 @@
-# CS2SkinSearch
+# SteamShopUrlCreator
 
 ## ❔ Why I Built This
 Because why not? :D Sometimes I need to search for a skin, and it may not be easy to find the exact criteria I’m looking for directly. So I thought, why not do this?
 
 ## ⚙️ How to run
 ```
-git clone https://github.com/yigitgulmez/CS2SkinSearch
+git clone https://github.com/yigitgulmez/SteamShopUrlCreator
 
-cd ./CS2SteamSearch
+cd ./SteamShopUrlCreator
 
 python.exe main.py
 ```
