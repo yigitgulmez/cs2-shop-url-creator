@@ -3,6 +3,8 @@ from tkinter import ttk, messagebox
 from urllib.parse import quote
 import webbrowser
 import ctypes
+import os
+import sys
 
 VALID_WEAPONS = [
     "AK-47", "M4A4", "M4A1-S", "AWP", "MAG-7", "Glock-18", "Desert Eagle", "P250",
@@ -234,10 +236,20 @@ def create_combobox(frame, label_text, valid_values, row):
     combo.bind('<KeyPress>', lambda e: bind_keypress_to_open(e, combo))
     return combo
 
+
+def resource_path(relative_path):
+    # PyInstaller exe içindeyken doğru yolu bulmak için
+    try:
+        base_path = sys._MEIPASS
+    except Exception:
+        base_path = os.path.abspath(".")
+
+    return os.path.join(base_path, relative_path)
+
 ctypes.windll.shell32.SetCurrentProcessExplicitAppUserModelID('CS2SS')
 
 root = tk.Tk()
-root.iconbitmap('logo.ico')
+root.iconbitmap(resource_path("logo.ico"))
 root.title("Steam Shop URL Creater")
 root.geometry("410x210")
 root.resizable(False, False)
