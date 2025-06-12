@@ -2,7 +2,7 @@ import tkinter as tk
 from tkinter import ttk, messagebox
 from urllib.parse import quote
 import webbrowser
-import random
+import ctypes
 
 VALID_WEAPONS = [
     "AK-47", "M4A4", "M4A1-S", "AWP", "MAG-7", "Glock-18", "Desert Eagle", "P250",
@@ -234,7 +234,10 @@ def create_combobox(frame, label_text, valid_values, row):
     combo.bind('<KeyPress>', lambda e: bind_keypress_to_open(e, combo))
     return combo
 
+ctypes.windll.shell32.SetCurrentProcessExplicitAppUserModelID('CS2SS')
+
 root = tk.Tk()
+root.iconbitmap('logo.ico')
 root.title("Steam Shop URL Creater")
 root.geometry("410x210")
 root.resizable(False, False)
