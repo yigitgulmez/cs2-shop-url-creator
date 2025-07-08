@@ -1,4 +1,4 @@
-# cs2-shop-url-creator
+# CS2 Shop Url Creator
 
 <img src="https://github.com/yigitgulmez/SteamShopUrlCreator/blob/main/logo.ico" align="left" height="250"/>
 <img src="https://github.com/user-attachments/assets/43f7db30-1d3b-412a-9e72-392dcafe2a90" align="center" height="250"/>
