@@ -1,7 +1,7 @@
 # CS2 Shop Url Creator
 
 <img src="https://github.com/yigitgulmez/SteamShopUrlCreator/blob/main/logo.ico" align="left" height="250"/>
-<img src="https://github.com/user-attachments/assets/43f7db30-1d3b-412a-9e72-392dcafe2a90" align="center" height="250"/>
+<img src="https://github.com/user-attachments/assets/7a4d19ab-9a8c-4789-852a-668aade01c76" align="center" height="250"/>
 
 ## ❔ Why I Built This
 Because why not? :D Sometimes I need to search for a skin, and it may not be easy to find the exact criteria I’m looking for directly. So I thought, why not do this?
