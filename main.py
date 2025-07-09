@@ -204,6 +204,7 @@ def open_url_in_new_window(root, url):
     win = tk.Toplevel(root)
     win.title("Resulting URL")
     win.geometry("500x150")
+    win.resizable(False, False)
     win.configure(bg=BG_COLOR)
 
     tk.Label(win, text="Resulting URL:", bg=BG_COLOR, fg=UV_COLOR, font=("Arial", 12, "bold")).pack(pady=5)
@@ -250,7 +251,7 @@ ctypes.windll.shell32.SetCurrentProcessExplicitAppUserModelID('CS2SS')
 
 root = tk.Tk()
 root.iconbitmap(resource_path("logo.ico"))
-root.title("Steam Shop URL Creater")
+root.title("CS2 Shop URL Creater")
 root.geometry("410x210")
 root.resizable(False, False)
 root.configure(bg=BG_COLOR)
