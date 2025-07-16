@@ -14,6 +14,6 @@ cd ./cs2-shop-url-creator
 
 python.exe main.py
 ```
-## ❗Tip
+## ❗ Tip
 The list filters automatically as you type.
 Press Enter to open the dropdown and make a selection.
